@@ -33,3 +33,12 @@ body {
     width: 25%;
     background-color: blue;
 }
+
+button {
+    position: fixed;
+    left:50%;
+    top: 20%;
+}
+td {
+    background-color: antiquewhite;
+}
