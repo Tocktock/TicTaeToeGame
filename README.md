@@ -1,4 +1,6 @@
 # TicTaeToe Games using VanillaJS
 
-    fucntion is completed and style is not yet
+    table size can be varied.
+    fucntion is completed.
     recommend using Go Live extension.
+    need to be refactoring.

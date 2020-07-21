@@ -77,37 +77,6 @@ btnMaxBoxNum.addEventListener("click", () => {
   }
   drawTable();
 });
-// for (let i = 0; i < 3; i++) {
-//   const tr = document.createElement("tr");
-//   for (let i = 0; i < 3; i++) {
-//     const td = document.createElement("td");
-//     td.className = "container";
-//     td.id = id;
-//     td.innerHTML = id;
-//     td.addEventListener("click", (e) => {
-//       if (gameState === false) return;
-//       let boxId = e.target.id;
-//       if (boxArray[boxId] !== null) {
-//         return;
-//       }
-//       boxArray[boxId] = turn;
-//       e.target.style.backgroundColor = turn ? "blue" : "red";
-//       if (checkBingo(turn, boxId)) {
-//         console.log(`${turn ? "blue" : "red"} Win`);
-//         if (turn === false) {
-//           redTeamScore.innerText = ++redScore;
-//         } else {
-//           blueTeamScore.innerText = ++blueScore;
-//         }
-//         gameState = false;
-//       }
-//       turn = !turn;
-//     });
-//     tr.appendChild(td);
-//     id++;
-//   }
-//   gameBoxTable.appendChild(tr);
-// }
 
 const reset = () => {
   boxArray.fill(null);
