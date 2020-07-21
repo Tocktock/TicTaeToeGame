@@ -71,8 +71,9 @@ const checkDirect = (index ,value, turn) => {
     let temp = index + value;
     while(temp >=0 && temp <= 9) {
         if(boxArray[value] != turn) {
-            return false;
+            return true;
         }
         temp + value;
     }
+    return false;
 }
