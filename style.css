@@ -1,44 +1,93 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* header */
+.header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+.header input {
+  outline-style: groove;
 }
 
+.header button {
+  margin: 10px;
+  width: auto;
+  height: 30px;
+}
+
+/* game */
 .game {
-    width: 1000px;
-    display: flex;
-    text-align: center;
+  width: 1000px;
+
+  display: flex;
+  text-align: center;
 }
 
 .container {
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    border: 3px solid gray;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border: 3px solid gray;
 }
 
+.red__team,
+.blue__team {
+  margin: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 25%;
+  color: white;
+  font-size: large;
+}
 .red__team {
-    width: 25%;
-    background-color: red;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 .game__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    width: 50%;
-    background-color:cadetblue;
+  margin: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 50%;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 .blue__team {
-    width: 25%;
-    background-color: blue;
+  background: rgb(187, 184, 240);
+  background: linear-gradient(
+    123deg,
+    rgba(187, 184, 240, 1) 0%,
+    rgba(18, 18, 244, 1) 54%,
+    rgba(51, 185, 224, 1) 100%
+  );
 }
-
-button {
-    position: fixed;
-    left:50%;
-    top: 20%;
+.maxBox__num {
+  border: 3px solid black;
 }
 td {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
+  text-align: center;
 }
