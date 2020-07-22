@@ -1,4 +1,4 @@
-# TicTaeToe Games using VanillaJS
+# TicTaeToe Game using VanillaJS
 
     table size can be varied.
     fucntion is completed.
